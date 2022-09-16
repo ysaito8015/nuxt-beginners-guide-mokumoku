@@ -12,7 +12,12 @@
               {{ item.title }}
             </span>
             <small>
-              by {{ item.user.id }}
+              <span>by </span>
+              <nuxt-link
+                :to="`/users/${item.user.id}`"
+              >
+                {{ item.user.id }}
+              </nuxt-link>
             </small>
           </h4>
           <div class="item-body">
