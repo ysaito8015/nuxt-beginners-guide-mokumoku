@@ -1,11 +1,24 @@
-# dependencies
-node_modules
+# Created by https://www.toptal.com/developers/gitignore/api/nuxtjs,direnv,vuejs
+# Edit at https://www.toptal.com/developers/gitignore?templates=nuxtjs,direnv,vuejs
 
-# logs
-npm-debug.log
+### direnv ###
+.direnv
+.envrc
 
+### Nuxtjs ###
 # Nuxt build
 .nuxt
 
 # Nuxt generate
 dist
+
+### Vuejs ###
+# Recommended template: Node.gitignore
+
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# End of https://www.toptal.com/developers/gitignore/api/nuxtjs,direnv,vuejs
+
