@@ -22,6 +22,12 @@ module.exports = {
   ],
   axios: {
   },
+  plugins: [
+    '~/plugins/axios.js'
+  ],
+  env: {
+    API_KEY: process.env.API_KEY
+  },
   /*
   ** Build configuration
   */
