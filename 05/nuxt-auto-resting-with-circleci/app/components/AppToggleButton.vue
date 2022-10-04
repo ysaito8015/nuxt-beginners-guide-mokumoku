@@ -1,7 +1,14 @@
 <template>
   <div>
-    <p>
-      {{status ? 'on' : 'off'}}
+    <p
+      v-if="status"
+      >
+      on
+    </p>
+    <p
+      v-else
+      >
+      off
     </p>
     <button
       type="button"
@@ -21,7 +28,7 @@ export default {
   },
   methods: {
     toggle() {
-      return this.status = !this.status
+      this.status = true
     }
   }
 }
