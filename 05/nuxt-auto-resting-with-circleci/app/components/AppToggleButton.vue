@@ -1,10 +1,28 @@
 <template>
   <div>
-    <p></p>
+    <p>
+      {{status ? 'on' : 'off'}}
+    </p>
+    <button
+      type="button"
+      @click="toggle"
+      >
+      toggle
+    </button>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      status: false
+    }
+  },
+  methods: {
+    toggle() {
+      return this.status = !this.status
+    }
+  }
 }
 </script>
